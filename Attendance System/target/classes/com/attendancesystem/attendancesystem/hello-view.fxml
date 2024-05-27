@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.attendancesystem.attendancesystem.HelloController" prefWidth="1200" prefHeight="800">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+  </padding>
+
+  <Label fx:id="welcomeText" style="-fx-font-weight: bold;"/>
+
+
+  <StackPane>
+
+    <VBox alignment="CENTER" spacing="10.0">
+      <!-- Adding Buttons -->
+      <Button text="Course" onAction="#handleCoursesButton" prefWidth="200" prefHeight="30"/>
+      <Button text="Attendance" onAction="#handleAttendanceButton" prefWidth="200" prefHeight="30"/>
+      <Button text="Password" onAction="#handlePasswordButton" prefWidth="200" prefHeight="30"/>
+      <Button text="Quiz" onAction="#handleQuizButton" prefWidth="200" prefHeight="30"/>
+      <Button text="Student" onAction="#handleStudentsButton" prefWidth="200" prefHeight="30"/>
+    </VBox>
+  </StackPane>
+
+</VBox>
